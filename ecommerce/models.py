@@ -19,11 +19,12 @@ class User(db.Model):
     email = db.Column(db.String(120), nullable=False)
     phone = db.Column(db.String(20), nullable=False)
     image_file = db.Column(db.String(20), nullable=False, default='default.jpg')
+    isadmin = db.Column(db.Boolean(), nullable=False)
 
     def __repr__(self):
         return f"User('{self.fname}', '{self.lname}'), '{self.password}', " \
                f"'{self.address1}', '{self.address2}', '{self.city}', '{self.state}', '{self.country}'," \
-               f"'{self.zipcode}','{self.email}','{self.phone}')"
+               f"'{self.zipcode}','{self.email}','{self.phone}', '{self.isadmin}')"
 
 
 class Category(db.Model):
