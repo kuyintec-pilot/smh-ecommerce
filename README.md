@@ -1,6 +1,9 @@
 As building ecommerce website has alot of work so we have divided 
 whole project into 3 flows-
 
+**Setup Environment**
+
+
 **Home Page**
  
     1. Showing all active products (title and price)
